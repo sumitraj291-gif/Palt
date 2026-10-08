@@ -39,6 +39,7 @@ export default function TourPackageLanding({ data }: { data: TourPackagePageData
                 alt={data.imageAlt}
                 width={1200}
                 height={800}
+                unoptimized
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="absolute inset-0 h-full w-full object-cover"

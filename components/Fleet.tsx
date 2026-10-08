@@ -72,6 +72,7 @@ export default function Fleet() {
                   src={vehicle.image}
                   alt={vehicle.name}
                   fill
+                  unoptimized
                   sizes="(max-width: 480px) 100vw, (max-width: 700px) 50vw, (max-width: 1050px) 33vw, 20vw"
                   quality={75}
                 />

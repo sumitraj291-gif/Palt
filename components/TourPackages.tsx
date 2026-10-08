@@ -69,6 +69,7 @@ export default function TourPackages() {
                   src={item.image}
                   alt={item.title}
                   fill
+                  unoptimized
                   sizes="(max-width: 700px) 100vw, (max-width: 1050px) 50vw, 33vw"
                   quality={75}
                 />

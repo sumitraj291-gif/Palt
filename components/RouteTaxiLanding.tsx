@@ -62,6 +62,7 @@ export default function RouteTaxiLanding({ route }: { route: TaxiRouteData }) {
               src={route.image}
               alt={route.imageAlt}
               fill
+              unoptimized
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"

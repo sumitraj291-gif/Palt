@@ -35,6 +35,7 @@ export default function Destinations() {
                 src={image}
                 alt={name}
                 fill
+                unoptimized
                 sizes="(max-width: 700px) 100vw, (max-width: 1050px) 50vw, 33vw"
                 quality={75}
               />
