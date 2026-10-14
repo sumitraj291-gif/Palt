@@ -35,7 +35,7 @@ export default function PopularRoutes() {
             <div className="route-card" key={`${from}-${to}`}>
               <div className="route-top">
                 <div className="route-pin">
-                  <MapPin size={17} />
+                  <MapPin size={15} />
                 </div>
                 <span>Starting From</span>
               </div>
@@ -47,7 +47,7 @@ export default function PopularRoutes() {
                 </div>
 
                 <div className="route-arrow">
-                  <ArrowRight size={19} />
+                  <ArrowRight size={15} />
                 </div>
 
                 <div className="route-destination">

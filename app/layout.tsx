@@ -3,6 +3,7 @@ import { DM_Sans, Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingContact from "@/components/FloatingContact";
 import { site } from "@/lib/data";
 
 const dmSans = DM_Sans({
@@ -32,6 +33,9 @@ export const metadata: Metadata = {
     title: "Taxi Services, Tours & Chardham Yatra in Haridwar | Pal Travels",
     description: "Explore taxi services, tour and travel options, and Chardham Yatra travel from Haridwar with Pal Travels. Contact our team to plan your journey.",
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -54,11 +58,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${manrope.variable}`}>
+      <body className={`${dmSans.variable} ${manrope.variable} pb-16 md:pb-0`}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <Header />
         {children}
         <Footer />
+        <FloatingContact />
       </body>
     </html>
   );
